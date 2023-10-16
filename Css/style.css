@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100&family=Oswald:wght@200&family=Roboto+Condensed:wght@300&family=Titillium+Web:wght@200&family=Updock&display=swap');
+
+*{
+
+padding: 0;
+margin: 0;
+font-family: 'Titillium Web', sans-serif;
+
+}
+
+.sidebar{
+    background-color: darkcyan;
+    height: 100vh;
+    width: 300px;
+    top: 0;
+    left: 0;
+    position: fixed;
+transition: 0.5s ease-in;
+overflow-x: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.sidebarcollapse{
+    
+    width: 80px;
+ 
+}
+
+.logo{
+    padding: 0 1rem; 
+    text-align: center;
+   white-space: nowrap;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.logo>i{
+   
+    font-size: 3rem; 
+    margin-right: 1rem;
+    color: white;
+}
+
+.logo >span{
+    font-size: 3rem;
+   
+    
+
+}
+
+.link{
+    display: block;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration:none;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.link:hover{
+    background-color: cadetblue;
+    border-left: 4px solid white;
+    color: white;
+}
+.link > i{
+    font-size: 1.5rem;
+    
+}
+.link > span{
+    margin: 0 1.9rem;
+}
+
+
+.main{
+width: calc(100%-300px);
+transition: 0.5s ease-in;
+margin-left: 300px;
+
+}
+.maincollapse{
+    margin-left: 80px;
+}
+
+.goal{
+    width: 90%;
+    height:auto;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.one{
+    width: 47.5%;
+    background-color:lightblue;
+    padding: 5rem 0;
+    text-align: center;
+    border-radius: 1.5rem;
+}
+
+.detail{
+    width: 90%;
+    height:auto;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.team{
+    width: 31%;
+    background-color: lightgray;
+    padding: 5rem 0;
+    text-align: center;
+    border-radius: 1.5rem;
+}
+.mobile{
+    width: 22.5%;
+    background-color: lightgoldenrodyellow;
+    padding: 5rem 0;
+    text-align: center;
+    border-radius: 1.5rem;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+
+
+    .main{
+        width: 100%;
+        margin-left: 0;
+        
+        }
+        .goal{
+            width: 90%;
+            height:auto;
+            margin: 3rem auto;
+            display: block;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .one{
+            width: 90%;
+            background-color:lightblue;
+            padding: 5rem 0;
+            margin: 1rem auto;
+            text-align: center;
+        }
+        .detail{
+            width: 90%;
+            height:auto;
+            margin: 3rem auto;
+            display: block;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .team{
+            width: 90%;
+            margin:1rem auto;
+            background-color: lightgray;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        .mobile{
+            width: 90%;
+            margin:1rem  auto;
+            background-color: lightgoldenrodyellow;
+            padding: 5rem 0;
+            text-align: center;
+            border-radius: 1.5rem;
+        }
+      
+        .sidebar{
+            display: none;
+        }
+        .sidebardisplay{
+            
+            width: 250px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+           
+  }
+  .logo{
+    padding: 1rem; 
+    text-align: center;
+   white-space: nowrap;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: white;
+    font-weight: 600;
+}
+  
+  .logo>i{
+   
+    font-size: 2rem; 
+    margin-right: 1rem;
+    color: white;
+}
+
+.logo >span{
+    font-size: 2rem;
+   
+    
+
+}
+}

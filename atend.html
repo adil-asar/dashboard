@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Custom Css -->
+<link rel="stylesheet" href="./Css/style.css">
+
+
+<!-- icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Dashboard</title>
+  </head>
+
+
+  <body>
+ 
+  
+    <div id="menue" class="sidebar">
+    
+<div class="logo">
+  <i  id="icon" class="fas fa-apple-alt"></i>  <span>E</span>sad <span>P</span>ower
+</div>
+
+<div class="menu-link">
+ <a href="./index.html" class="link"> <i class="fas fa-tachometer-alt-fast"></i>  <span>Dashboard</span> </a>
+ <a href="./class.html" class="link"> <i class="fa-solid fa-users-line"></i> <span>Classrooms</span> </a>
+ <a href="./exam.html" class="link"> <i class="fa-solid fa-house-laptop"></i> <span> Online Exam</span> </a>
+ <a href="./atend.html" class="link"> <i class="far fa-address-card"></i> <span> Attendence</span> </a>
+ <a href="./assignment.html" class="link"> <i class="fa-solid fa-book"></i> <span> Assignments</span> </a>
+ <a href="./clear.html" class="link"> <i class="fa-solid fa-file"></i> <span> Clearence</span> </a>
+ <a href="./edit.html" class="link"> <i class="far fa-edit"></i> <span> Edit Settings</span> </a>
+ <a href="./setting.html" class="link"> <i class="fa-solid fa-gear"></i> <span> Settings</span> </a>
+  
+</div>
+
+    </div>
+
+
+
+  <div id="mymain" class="main">
+    <div class="goal">
+<div class="one"> <h1  id="toggle_id">Click To Collapse</h1> </div>
+<div class="one"><h1> this is Attendence section </h1></div>
+    </div>
+
+    <div class="detail">
+      <div class="team"> <h1> our services</h1></div>
+      <div class="team" > <h1> our team </h1></div>
+      <div class="team"> <h1> our projects</h1> </div>
+    </div>
+    <div class="detail">
+      <div class="mobile"> <h1> oppo</h1></div>
+      <div class="mobile" > <h1> aqua </h1></div>
+      <div class="mobile"> <h1> redmi </h1> </div>
+      <div class="mobile"> <h1> vivo</h1> </div>
+    </div>
+
+  </div>
+ 
+
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+   
+   $(document).ready(function(){
+  $("#toggle_id").click(function(){
+    $(".sidebar").toggleClass("sidebarcollapse");
+    $(".main").toggleClass("maincollapse");
+    $(".sidebar").toggleClass("sidebardisplay");
+  });
+});
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
